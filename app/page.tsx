@@ -58,7 +58,7 @@ const enviarFormulario = async (e: React.FormEvent<HTMLFormElement>) => {
 
         <div className="invisible absolute left-1/2 top-full w-[760px] -translate-x-1/2 pt-4 opacity-0 transition group-hover:visible group-hover:opacity-100">
           <div className="rounded-3xl border border-white/10 bg-[#070b1f] p-6 shadow-2xl">
-            <div className="grid grid-cols-3 gap-6"></div>
+            <div className="grid grid-cols-2 gap-6"></div>
             <div>
               <p className="mb-4 border-b border-white/10 pb-3 font-semibold text-white">
                 Software
@@ -77,18 +77,7 @@ const enviarFormulario = async (e: React.FormEvent<HTMLFormElement>) => {
               </a>
             </div>
 
-            <div>
-              <p className="mb-4 border-b border-white/10 pb-3 font-semibold text-white">
-                Próximamente
-              </p>
-
-              <div className="space-y-3 text-slate-500">
-                <p>Inventario</p>
-                <p>Ventas</p>
-                <p>Proveedores</p>
-                <p>Reportes gerenciales</p>
-              </div>
-            </div>
+            
 
             <div>
               <p className="mb-4 border-b border-white/10 pb-3 font-semibold text-white">
@@ -111,8 +100,8 @@ const enviarFormulario = async (e: React.FormEvent<HTMLFormElement>) => {
         </div>
       </div>
 
-      <a href="/herramientas" className="transition hover:text-white">
-        Herramientas
+      <a href="/recursos" className="transition hover:text-white">
+        Recursos
       </a>
 
       <a href="#contacto" className="transition hover:text-white">
