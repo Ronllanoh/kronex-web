@@ -12,7 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.kronex.cl"),
   title: {
@@ -29,10 +28,6 @@ export const metadata: Metadata = {
     "automatización de procesos",
     "software para empresas Chile",
   ],
-  robots: {
-    index: true,
-    follow: true,
-  },
   openGraph: {
     title: "Kronex | Soluciones Digitales para Empresas",
     description:
@@ -52,3 +47,18 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="es-CL"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}
