@@ -21,31 +21,34 @@ export const metadata: Metadata = {
   },
   description:
     "Kronex desarrolla soluciones digitales, herramientas financieras y sistemas para ordenar, automatizar y hacer crecer empresas en Chile.",
+  keywords: [
+    "Kronex",
+    "soluciones digitales para empresas",
+    "herramientas financieras",
+    "sistema de cobranza",
+    "automatización de procesos",
+    "software para empresas Chile",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Kronex | Soluciones Digitales para Empresas",
     description:
       "Automatiza procesos, mejora la gestión y usa herramientas digitales para hacer crecer tu empresa.",
-    url: "https://www.kronex.cl",
+    url: "/",
     siteName: "Kronex",
     locale: "es_CL",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kronex | Soluciones Digitales para Empresas",
+    description:
+      "Automatiza procesos, mejora la gestión y usa herramientas digitales para hacer crecer tu empresa.",
+  },
   alternates: {
-    canonical: "https://www.kronex.cl",
+    canonical: "/",
   },
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html
-      lang="es-CL"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
-  );
-}
